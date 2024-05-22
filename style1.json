@@ -20,7 +20,7 @@
     "sources": {
       "PhiladelphiaImagery2016": {
         "type": "raster",
-        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2016/MapServer/WMSServer",
+        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2016/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetMap&LAYERS=PhiladelphiaImagery2016",
         "tiles": ["{z}/{x}/{y}.png"],
         "tileSize": 256
       }
