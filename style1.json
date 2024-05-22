@@ -1,0 +1,28 @@
+{
+    "version": 8,
+    "id": "my-raster",
+    "name": "My raster",
+    "zoom": 1,
+    "pitch": 0,
+    "bearing": 0,
+    "center": [
+      0,
+      0
+    ],
+    "layers": [
+      {
+        "id": "PhiladelphiaImagery2016",
+        "type": "raster",
+        "source": "PhiladelphiaImagery2016",
+        "paint": {}
+      }
+    ],
+    "sources": {
+      "PhiladelphiaImagery2016": {
+        "type": "raster",
+        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2016/MapServer/WMSServer",
+        "tiles": ["{z}/{x}/{y}.png"],
+        "tileSize": 256
+      }
+    }
+  }
