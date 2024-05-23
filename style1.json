@@ -1,28 +1,22 @@
 {
-    "version": 8,
-    "id": "my-raster",
-    "name": "My raster",
-    "zoom": 1,
-    "pitch": 0,
-    "bearing": 0,
-    "center": [
-      0,
-      0
-    ],
-    "layers": [
-      {
-        "id": "PhiladelphiaImagery2016",
-        "type": "raster",
-        "source": "PhiladelphiaImagery2016",
-        "paint": {}
-      }
-    ],
-    "sources": {
-      "PhiladelphiaImagery2016": {
-        "type": "raster",
-        "url": "https://imagery.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2016/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetMap&LAYERS=PhiladelphiaImagery2016",
-        "tiles": ["{z}/{x}/{y}.png"],
-        "tileSize": 256
-      }
+  "version": 8,
+  "name": "Philadelphia Imagery 2017",
+  "sources": {
+    "raster-source-1": {
+      "type": "raster",
+      "tiles": [
+        "https://imagery.pasda.psu.edu/arcgis/services/pasda/PhiladelphiaImagery2017/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=2&WIDTH=256&HEIGHT=256&CRS=EPSG:2272&STYLES=&BBOX={bbox-epsg-2272}"
+      ],
+      "tileSize": 256
     }
-  }
+  },
+  "layers": [
+    {
+      "id": "raster-layer-1",
+      "type": "raster",
+      "source": "raster-source-1",
+      "paint": {}
+    }
+  ],
+  "id": "philadelphia-imagery-2017"
+}
