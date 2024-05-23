@@ -17,6 +17,13 @@
       }
     },
     {
+      "id": "wms-imagery-layer",  
+      "type": "raster",
+      "source": "wms-imagery",
+      "minzoom": 0,
+      "maxzoom": 22
+    },
+    {
       "id": "landuse_residential",
       "type": "fill",
       "paint": {
